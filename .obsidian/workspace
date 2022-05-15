@@ -1,0 +1,115 @@
+{
+  "main": {
+    "id": "6ed5e6c1f0172bf3",
+    "type": "split",
+    "children": [
+      {
+        "id": "010c3be0f4cc06d8",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "efb2bf4d5b632970",
+    "type": "split",
+    "children": [
+      {
+        "id": "c80e4615cdb49d2e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d9d0d229fabfca9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d4d51b9cd2ad6704",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "m",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 219
+  },
+  "right": {
+    "id": "d2c0969a8a603118",
+    "type": "split",
+    "children": [
+      {
+        "id": "162086c68e607880",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b198d899a0fb09d4",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "a0f7f3af24f11e99",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5c194282d4c8b571",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 271,
+    "collapsed": true
+  },
+  "active": "010c3be0f4cc06d8",
+  "lastOpenFiles": [
+    "3.blogs/技术blog/WSL简单环境搭建以及踩坑.md",
+    "4. 项目笔记/ruoyi问题.md",
+    "1. 编程学习/4. Linux/Linux学习.md",
+    "1. 编程学习/4. Linux/简单命令.md",
+    "1. 编程学习/1.数据库原理.md",
+    "1. 编程学习/1.数据结构与算法.md",
+    "2. 编程杂项问题/test.md",
+    "3.blogs/技术blog/腾讯云Linux连接ssh失败问题.md",
+    "3.blogs/技术blog/python动态网站爬虫实战(requests+xpath+demjson+redis).md",
+    "3.blogs/技术blog/typora+gitee+picgo搭建本地博客环境.md"
+  ]
+}

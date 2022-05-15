@@ -1,0 +1,36 @@
+.theme-dark {
+    --h1-color:rgba(64, 240, 231, 0.623);
+    --h2-color:rgba(45, 218, 175, 0.719);
+    --h3-color:rgba(206, 218, 45, 0.719);
+    --h4-color:var(--text-normal);
+    --h5-color:var(--text-normal);
+    --h6-color:var(--text-muted);
+  }
+  h1, .empty-state-title, .markdown-preview-view h1, .markdown-source-view.mod-cm6 .HyperMD-header-1 > .cm-fold-indicator, .cm-s-obsidian .cm-header-1 {
+    font-variant: var(--h1-variant);
+    letter-spacing: -0.02em;
+    line-height: 2.5;
+    font-size: var(--h1);
+    color: var(--h1-color);
+    font-weight: var(--h1-weight);
+}
+
+.markdown-preview-view h2, .markdown-source-view.mod-cm6 .HyperMD-header-2 > .cm-fold-indicator, .cm-s-obsidian .cm-header-2 {
+  font-variant: var(--h2-variant);
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  font-size: var(--h2);
+  color: var(--h2-color);
+  font-weight: var(--h2-weight);
+}
+
+.cm-s-obsidian .HyperMD-codeblock, .markdown-preview-view pre, .markdown-source-view.mod-cm6 .cm-preview-code-block pre.dataview-error, .mod-cm6 .cm-editor .HyperMD-codeblock.cm-line {
+  color: var(--text-code);
+  font-size: 15px;
+}
+
+.cm-s-obsidian span.cm-inline-code, .markdown-preview-view code {
+  color: #c5d214d0;
+  font-size: .85em;
+}
+

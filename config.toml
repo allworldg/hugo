@@ -1,0 +1,44 @@
+baseURL = "http://allworldg.github.io"
+title = "Allworldg Blog"
+theme = "hugo-coder"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+paginate = 20
+pygmentsStyle = "bw"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+enableEmoji = true
+
+
+[params]
+author = "Allworldg"
+description = "Allworldg's personal website"
+keywords = "blog,developer,personal"
+info = ["一个菜鸟小白的个人空间"]
+avatarURL = "images/dog.png"
+dateFormat = "January 2, 2006"
+since = 2022
+colorScheme = "auto"
+hideColorSchemeToggle = false
+
+
+[[params.social]]
+name = "Github"
+icon = "fa fa-2x fa-github"
+weight = 1
+url = "https://github.com/allworldg/"
+
+[languages]
+      [languages.zh-cn.menu]
+          [[languages.zh-cn.menu.main]]
+              name = "Blog"
+              weight = 1
+              url  = "blogs/"
+          [[languages.zh-cn.menu.main]]
+              name = "分类"
+              weight = 2
+              url = "tag/"
+          [[languages.zh-cn.menu.main]]
+              name = "关于"
+              weight = 3
+              url  = "about/"
