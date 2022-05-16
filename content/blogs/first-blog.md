@@ -5,4 +5,4 @@ draft: false
 ---
 # hello mina
 
-just test for action
+just test for action.
