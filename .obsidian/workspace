@@ -7,8 +7,13 @@
         "id": "010c3be0f4cc06d8",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "content/blogs/零成本搭建个人博客搭建篇.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/blogs/零成本搭建个人博客搭建篇.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +94,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/blogs/零成本搭建个人博客搭建篇.md"
+              }
             }
           }
         ],
@@ -101,15 +109,15 @@
   },
   "active": "010c3be0f4cc06d8",
   "lastOpenFiles": [
-    "3.blogs/技术blog/WSL简单环境搭建以及踩坑.md",
-    "4. 项目笔记/ruoyi问题.md",
-    "1. 编程学习/4. Linux/Linux学习.md",
-    "1. 编程学习/4. Linux/简单命令.md",
-    "1. 编程学习/1.数据库原理.md",
-    "1. 编程学习/1.数据结构与算法.md",
-    "2. 编程杂项问题/test.md",
-    "3.blogs/技术blog/腾讯云Linux连接ssh失败问题.md",
-    "3.blogs/技术blog/python动态网站爬虫实战(requests+xpath+demjson+redis).md",
-    "3.blogs/技术blog/typora+gitee+picgo搭建本地博客环境.md"
+    "content/blogs/零成本搭建个人博客搭建篇.md",
+    "content/blogs/库.md",
+    "content/blogs/first-blog.md",
+    "static/images/N90.jpg",
+    "static/images/favicon-32x32.png",
+    "static/images/favicon-16x16.png",
+    "static/images/dog.png",
+    "static/images/avatar.jpg",
+    "static/images/apple-touch-icon.png",
+    "3.blogs/技术blog/WSL简单环境搭建以及踩坑.md"
   ]
 }
