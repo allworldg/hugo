@@ -3,17 +3,18 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main  # Set a branch name to trigger deployment
+  pull_request:
 
 jobs:
-  deploy: 
+  deploy:
     runs-on: ubuntu-20.04
     permissions:
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -30,6 +31,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: allworldg/allworldg.github.io
           publish_branch: master
