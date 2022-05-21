@@ -1,0 +1,7 @@
+{
+  "deleteOption": "system-trash",
+  "logsModal": true,
+  "excludedFolders": "anchetypes,\ncontent,\ndata,\nlayouts,\npublic,\nresources,\nthemes,\nstatic/images,\nthemes",
+  "ribbonIcon": false,
+  "excludeSubfolders": true
+}

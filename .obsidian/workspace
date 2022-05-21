@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "010c3be0f4cc06d8",
+        "id": "cd8217f4397e637b",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -107,17 +107,17 @@
     "width": 271,
     "collapsed": true
   },
-  "active": "010c3be0f4cc06d8",
+  "active": "cd8217f4397e637b",
   "lastOpenFiles": [
     "content/blogs/零成本搭建个人博客搭建篇.md",
-    "content/blogs/库.md",
-    "content/blogs/first-blog.md",
+    "static/images/apple-touch-icon.png",
     "static/images/N90.jpg",
     "static/images/favicon-32x32.png",
     "static/images/favicon-16x16.png",
     "static/images/dog.png",
     "static/images/avatar.jpg",
-    "static/images/apple-touch-icon.png",
-    "3.blogs/技术blog/WSL简单环境搭建以及踩坑.md"
+    "static/BlogImages/Pasted image 20220518173723.png",
+    "static/BlogImages/Pasted image 20220518110540.png",
+    "static/BlogImages/Pasted image 20220519172445.png"
   ]
 }
