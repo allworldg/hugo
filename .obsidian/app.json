@@ -4,7 +4,7 @@
   "strictLineBreaks": false,
   "newFileLocation": "current",
   "newLinkFormat": "absolute",
-  "attachmentFolderPath": "static/BlogImages",
+  "attachmentFolderPath": "BlogImages",
   "showLineNumber": false,
   "vimMode": false,
   "promptDelete": false,
