@@ -1,5 +1,6 @@
 {
   "blue-topaz-theme@@hide-vault-name": true,
   "blue-topaz-theme@@bt-status-off": true,
-  "blue-topaz-theme@@hide-titlebar-text": false
+  "blue-topaz-theme@@hide-titlebar-text": false,
+  "blue-topaz-theme@@translucent-setting-panel": false
 }

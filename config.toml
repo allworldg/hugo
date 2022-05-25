@@ -1,4 +1,4 @@
-baseURL = "http://allworldg.github.io"
+baseURL = "https://hugo-c1e.pages.dev/"
 title = "Allworldg Blog"
 theme = "hugo-coder"
 languageCode = "zh-cn"

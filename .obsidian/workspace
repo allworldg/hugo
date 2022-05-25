@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "m",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,8 +99,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,14 +109,14 @@
   "active": "cd8217f4397e637b",
   "lastOpenFiles": [
     "content/blogs/零成本搭建个人博客搭建篇.md",
+    "content/blogs/零成本搭建个人博客之图床和cdn加速.md",
+    "content/blogs/first-blog.md",
     "BlogImages/Pasted image 20220519172445.png",
+    "BlogImages/Pasted image 20220525215003.png",
+    "BlogImages/Pasted image 20220520211637.png",
+    "BlogImages/Pasted image 20220520212439.png",
     "static/images/dog.png",
     "static/images/favicon-16x16.png",
-    "static/images/favicon-32x32.png",
-    "static/images/N90.jpg",
-    "content/about.md",
-    "content/tag.md",
-    "content/blogs/first-blog.md",
-    "BlogImages/Pasted image 20220518110540.png"
+    "static/images/favicon-32x32.png"
   ]
 }
