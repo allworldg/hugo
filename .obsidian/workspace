@@ -7,9 +7,12 @@
         "id": "cd8217f4397e637b",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "static/images/dog.png"
+            "file": "content/blogs/零成本搭建个人博客搭建篇.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
           }
         }
       }
@@ -75,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "static/images/dog.png",
+                "file": "content/blogs/零成本搭建个人博客搭建篇.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "static/images/dog.png"
+                "file": "content/blogs/零成本搭建个人博客搭建篇.md"
               }
             }
           }
@@ -106,6 +109,7 @@
   },
   "active": "cd8217f4397e637b",
   "lastOpenFiles": [
+    "content/blogs/零成本搭建个人博客搭建篇.md",
     "static/images/dog.png",
     "static/images/favicon-16x16.png",
     "static/images/favicon-32x32.png",
@@ -113,7 +117,6 @@
     "content/about.md",
     "content/tag.md",
     "content/blogs/first-blog.md",
-    "content/blogs/零成本搭建个人博客搭建篇.md",
     "BlogImages/Pasted image 20220518110540.png",
     "static/images/apple-touch-icon.png"
   ]

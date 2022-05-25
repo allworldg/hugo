@@ -1,7 +1,20 @@
 {
   "statusBarOrder": [],
   "ribbonBarOrder": [],
-  "fileExplorerOrder": {},
+  "fileExplorerOrder": {
+    "/": [
+      "archetypes",
+      "config.toml",
+      "content",
+      "data",
+      "layouts",
+      "public",
+      "resources",
+      "themes",
+      "static",
+      "BlogImages"
+    ]
+  },
   "actionBarOrder": {},
   "autoHide": false,
   "autoHideDelay": 2000,
