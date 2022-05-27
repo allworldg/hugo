@@ -7,8 +7,8 @@ paginate = 20
 pygmentsStyle = "bw"
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
-enableEmoji = true
-
+enableEmoji = true 
+cleanDestinationDir = true # clean obsolete or unrelated static file
 
 [params]
 author = "Allworldg"

@@ -14,7 +14,7 @@
  个人名片打造 文章归档分类 广告被动收入  博客平台选型网上流行的博客平台主要分为两大类：动态博客平台以及静态博客平台。动态博客中最强大的当属WordPress，该平台作为cms（内容提供系统）拥有庞大的用户基数，各种网站和论坛都可以直接使用它来搭建。静态博客中个人认为很有名的则是Hexo以及Hugo，这两者本身大同小异，我之前用的就是Hexo，现在则切换到本篇写作的主题：Hugo。
    比较 wordpress hexo &amp; hugo     搭建要求 一台服务器以及运行环境 静态生成页面，无需服务器。   性能 由于是动态生成页面，可以通过自行配置提高性能，但是仍然无法媲美静态页面 几乎无需考虑性能问题   访问速度 依赖于服务器配置以及cdn加速。 只需考虑cdn加速   功能完善 作为强大的cms功能很完善，需要的功能基本可以插件下载直接实现。 额外功能也可以通过插件实现，不过稍微需要自行查找以及diy   后台管理 现成的后台管理功能，开箱即用 由于静态博客，本身没有后台管理，有需求需要自行搜索实现    通过比较以及个人轻度使用经历，WordPress对于我来说，意味着每年要花费一点小钱维护服务器，同时还需要稍微注意一下服务器以及网站安全，当服务器过期不想付费时还需要备份以及导出，这对于我只想单纯写点博客实在太过繁琐，所以暂时放弃。静态博客中Hexo我也轻度用过，主题很多，功能也比较齐全，只是相比Hugo，由于构建博客依赖NodeJs，所以本地构建需要环境基础，速度也没有那么快，迁移稍微麻烦些。（如果使用代码托管平台自动构建，则两者基本没差别）。
 说到本篇博客主角：Hugo。基于Go语言编写，优点在于本地构建速度超快，同时无需准备任何前提环境，只需要简单配置即可。它可以很简洁，也可以根据个人需求以及diy能力变得功能强大，“花里胡哨”。虽然比Hexo发家晚，但是star数和fork数远远超过前者。所以从本篇博客开始，我打算一边慢慢升级个人博客，同时陆陆续续写博客搭建升级系列。
-本地博客搭建 直接从https://github.com/gohugoio/hugo/releases下载windows二进制压缩包。解压，将.exe运行文件放入bin目录下，然后将bin目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。 为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。 用命令创建新博客项目 hugo new site &#39;your BlogSite name（此处我自定义命名为&#39;HugoBlog&#39;&#39; 。创建完成后进入新生成的文件夹，可以看到以下文件结构。content目录下存放文章，themes存放主题，config.">
+本地博客搭建 直接从https://github.com/gohugoio/hugo/releases下载windows二进制压缩包。解压，将.exe运行文件放入bin目录下，然后将bin目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。 为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。 用命令创建新博客项目 hugo new site &#39;your BlogSite name（此处我自定义命名为&#39;HugoBlog&#39;&#39; 。创建完成后进入新生成的文件夹，可以看到以下文件结构。 content目录下存放文章，themes存放主题，config.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
@@ -24,7 +24,7 @@
  个人名片打造 文章归档分类 广告被动收入  博客平台选型网上流行的博客平台主要分为两大类：动态博客平台以及静态博客平台。动态博客中最强大的当属WordPress，该平台作为cms（内容提供系统）拥有庞大的用户基数，各种网站和论坛都可以直接使用它来搭建。静态博客中个人认为很有名的则是Hexo以及Hugo，这两者本身大同小异，我之前用的就是Hexo，现在则切换到本篇写作的主题：Hugo。
    比较 wordpress hexo &amp; hugo     搭建要求 一台服务器以及运行环境 静态生成页面，无需服务器。   性能 由于是动态生成页面，可以通过自行配置提高性能，但是仍然无法媲美静态页面 几乎无需考虑性能问题   访问速度 依赖于服务器配置以及cdn加速。 只需考虑cdn加速   功能完善 作为强大的cms功能很完善，需要的功能基本可以插件下载直接实现。 额外功能也可以通过插件实现，不过稍微需要自行查找以及diy   后台管理 现成的后台管理功能，开箱即用 由于静态博客，本身没有后台管理，有需求需要自行搜索实现    通过比较以及个人轻度使用经历，WordPress对于我来说，意味着每年要花费一点小钱维护服务器，同时还需要稍微注意一下服务器以及网站安全，当服务器过期不想付费时还需要备份以及导出，这对于我只想单纯写点博客实在太过繁琐，所以暂时放弃。静态博客中Hexo我也轻度用过，主题很多，功能也比较齐全，只是相比Hugo，由于构建博客依赖NodeJs，所以本地构建需要环境基础，速度也没有那么快，迁移稍微麻烦些。（如果使用代码托管平台自动构建，则两者基本没差别）。
 说到本篇博客主角：Hugo。基于Go语言编写，优点在于本地构建速度超快，同时无需准备任何前提环境，只需要简单配置即可。它可以很简洁，也可以根据个人需求以及diy能力变得功能强大，“花里胡哨”。虽然比Hexo发家晚，但是star数和fork数远远超过前者。所以从本篇博客开始，我打算一边慢慢升级个人博客，同时陆陆续续写博客搭建升级系列。
-本地博客搭建 直接从https://github.com/gohugoio/hugo/releases下载windows二进制压缩包。解压，将.exe运行文件放入bin目录下，然后将bin目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。 为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。 用命令创建新博客项目 hugo new site &#39;your BlogSite name（此处我自定义命名为&#39;HugoBlog&#39;&#39; 。创建完成后进入新生成的文件夹，可以看到以下文件结构。content目录下存放文章，themes存放主题，config."/>
+本地博客搭建 直接从https://github.com/gohugoio/hugo/releases下载windows二进制压缩包。解压，将.exe运行文件放入bin目录下，然后将bin目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。 为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。 用命令创建新博客项目 hugo new site &#39;your BlogSite name（此处我自定义命名为&#39;HugoBlog&#39;&#39; 。创建完成后进入新生成的文件夹，可以看到以下文件结构。 content目录下存放文章，themes存放主题，config."/>
 
     <meta property="og:title" content="零成本搭建个人博客搭建篇" />
 <meta property="og:description" content="为什么要搭建个人博客尽管已经有很多成型的在线博客平台供大家使用（csdn，博客园，掘金等），但是它们都有一些很明显的弊端，例如账号以及博客内容受到监管，所有权不属于作者本人，对于博客平台的功能diy自由度很低。
@@ -32,9 +32,9 @@
  个人名片打造 文章归档分类 广告被动收入  博客平台选型网上流行的博客平台主要分为两大类：动态博客平台以及静态博客平台。动态博客中最强大的当属WordPress，该平台作为cms（内容提供系统）拥有庞大的用户基数，各种网站和论坛都可以直接使用它来搭建。静态博客中个人认为很有名的则是Hexo以及Hugo，这两者本身大同小异，我之前用的就是Hexo，现在则切换到本篇写作的主题：Hugo。
    比较 wordpress hexo &amp; hugo     搭建要求 一台服务器以及运行环境 静态生成页面，无需服务器。   性能 由于是动态生成页面，可以通过自行配置提高性能，但是仍然无法媲美静态页面 几乎无需考虑性能问题   访问速度 依赖于服务器配置以及cdn加速。 只需考虑cdn加速   功能完善 作为强大的cms功能很完善，需要的功能基本可以插件下载直接实现。 额外功能也可以通过插件实现，不过稍微需要自行查找以及diy   后台管理 现成的后台管理功能，开箱即用 由于静态博客，本身没有后台管理，有需求需要自行搜索实现    通过比较以及个人轻度使用经历，WordPress对于我来说，意味着每年要花费一点小钱维护服务器，同时还需要稍微注意一下服务器以及网站安全，当服务器过期不想付费时还需要备份以及导出，这对于我只想单纯写点博客实在太过繁琐，所以暂时放弃。静态博客中Hexo我也轻度用过，主题很多，功能也比较齐全，只是相比Hugo，由于构建博客依赖NodeJs，所以本地构建需要环境基础，速度也没有那么快，迁移稍微麻烦些。（如果使用代码托管平台自动构建，则两者基本没差别）。
 说到本篇博客主角：Hugo。基于Go语言编写，优点在于本地构建速度超快，同时无需准备任何前提环境，只需要简单配置即可。它可以很简洁，也可以根据个人需求以及diy能力变得功能强大，“花里胡哨”。虽然比Hexo发家晚，但是star数和fork数远远超过前者。所以从本篇博客开始，我打算一边慢慢升级个人博客，同时陆陆续续写博客搭建升级系列。
-本地博客搭建 直接从https://github.com/gohugoio/hugo/releases下载windows二进制压缩包。解压，将.exe运行文件放入bin目录下，然后将bin目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。 为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。 用命令创建新博客项目 hugo new site &#39;your BlogSite name（此处我自定义命名为&#39;HugoBlog&#39;&#39; 。创建完成后进入新生成的文件夹，可以看到以下文件结构。content目录下存放文章，themes存放主题，config." />
+本地博客搭建 直接从https://github.com/gohugoio/hugo/releases下载windows二进制压缩包。解压，将.exe运行文件放入bin目录下，然后将bin目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。 为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。 用命令创建新博客项目 hugo new site &#39;your BlogSite name（此处我自定义命名为&#39;HugoBlog&#39;&#39; 。创建完成后进入新生成的文件夹，可以看到以下文件结构。 content目录下存放文章，themes存放主题，config." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://allworldg.github.io/blogs/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/" /><meta property="article:section" content="blogs" />
+<meta property="og:url" content="https://hugo-c1e.pages.dev/blogs/guide-to-setup-blog-with-zero-cost-1/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/" /><meta property="article:section" content="blogs" />
 <meta property="article:published_time" content="2022-05-16T22:08:57+08:00" />
 <meta property="article:modified_time" content="2022-05-16T22:08:57+08:00" />
 
@@ -45,7 +45,7 @@
 </title>
 
     
-      <link rel="canonical" href="http://allworldg.github.io/blogs/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/">
+      <link rel="canonical" href="https://hugo-c1e.pages.dev/blogs/guide-to-setup-blog-with-zero-cost-1/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/">
     
 
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -132,7 +132,7 @@
   <article>
     <header>
       <h1 class="title">
-        <a class="title-link" href="http://allworldg.github.io/blogs/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/">
+        <a class="title-link" href="https://hugo-c1e.pages.dev/blogs/guide-to-setup-blog-with-zero-cost-1/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/">
           零成本搭建个人博客搭建篇
         </a>
       </h1>
@@ -205,7 +205,8 @@
 <ol>
 <li>直接从<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>下载windows二进制压缩包。解压，将<code>.exe</code>运行文件放入<code>bin</code>目录下，然后将<code>bin</code>目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。</li>
 <li>为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。</li>
-<li>用命令创建新博客项目 <code>hugo new site 'your BlogSite name（此处我自定义命名为'HugoBlog''</code> 。创建完成后进入新生成的文件夹，可以看到以下文件结构。<img src="static/images/BlogImages/Pasted%20image%2020220518110540.png" alt="picture"> <code>content</code>目录下存放文章，<code>themes</code>存放主题，<code>config.toml</code>用于配置整个博客站点。</li>
+<li>用命令创建新博客项目 <code>hugo new site 'your BlogSite name（此处我自定义命名为'HugoBlog''</code> 。创建完成后进入新生成的文件夹，可以看到以下文件结构。<img src="https://img.allworldg.xyz/2022/05/0826acc0122d80fffd1670838d76264d.png" alt="picture"></li>
+<li><code>content</code>目录下存放文章，<code>themes</code>存放主题，<code>config.toml</code>用于配置整个博客站点。</li>
 <li>选择一个博客主题作为基础样式，可以去Hugo官网或者各大帖子推荐上找到自己初步看顺眼的主题，然后添加。
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd HugoBlog
 </span></span><span style="display:flex;"><span>git init 
@@ -221,7 +222,7 @@
 </span></span><span style="display:flex;"><span>pygmentsCodeFencesGuessSyntax = <span style="font-weight:bold">true</span>
 </span></span><span style="display:flex;"><span>enableEmoji = <span style="font-weight:bold">true</span>
 </span></span></code></pre></div></li>
-<li>创建一篇文章 <code>Hugo new Blog/FistBlog.md</code> ，此时在<code>/content/Blog</code>目录下会生成新的文章，然后就可以随意书写了。需要注意的是，如果想在指定导航下看到文章目录，则需要在<code>content</code>内创建一个文件夹，比如<code>Blog</code>。如果是想直接看到内容，则直接在<code>content</code>目录下创建文章即可。例如：点击“关于”直接展示内容。<img src="static/images/BlogImages/Pasted%20image%2020220518173723.png" alt=""></li>
+<li>创建一篇文章 <code>Hugo new Blog/FistBlog.md</code> ，此时在<code>/content/Blog</code>目录下会生成新的文章，然后就可以随意书写了。需要注意的是，如果想在指定导航下看到文章目录，则需要在<code>content</code>内创建一个文件夹，比如<code>Blog</code>。如果是想直接看到内容，则直接在<code>content</code>目录下创建文章即可。例如：点击“关于”直接展示内容。<img src="https://img.allworldg.xyz/2022/05/25e297c46bc3cfb5b2b6b373dbc8bb83.png" alt=""></li>
 <li>写好后将文章<code>draft</code>状态改为<code>false</code>，然后<code>HugoBLog</code>根目录下命令行运行<code>Hugo server</code>就可以本地浏览博客网站。</li>
 </ol>
 <h2 id="使用博客托管平台自动部署发布">
@@ -242,11 +243,10 @@
 </span></span><span style="display:flex;"><span>git commit -m <span style="font-style:italic">&#34;init&#34;</span>
 </span></span><span style="display:flex;"><span>git push origin master <span style="font-style:italic">#发送本地数据到代码仓库a</span>
 </span></span></code></pre></div>``
-查看自己的远程库，推送成功。
-<img src="static/images/BlogImages/Pasted%20image%2020220519172445.png" alt=""></li>
+查看自己的远程库，推送成功。<img src="https://img.allworldg.xyz/2022/05/c96885b78ca7260d997053410a7b1f7f.png" alt=""></li>
 <li>代码仓库a只用作备份数据，现在我需要利用github actions，也就是通过创建脚本自动将a仓库部分文件更新到仓库b。
 <ol>
-<li>首先点击<code>actions</code>，创建自定义workflow，<img src="static/images/BlogImages/Pasted%20image%2020220520211637.png" alt=""></li>
+<li>首先点击<code>actions</code>，创建自定义workflow，<img src="https://img.allworldg.xyz/2022/05/710fafd176c8f7eb2a08f9b8941fe8d3.png" alt=""></li>
 <li>github上已经有很多现成的actions，所以我们可以直接拿来用。这里推荐使用的是<code>peaceiris/actions-gh-pages</code> 。在配置文件自定义workflow配置文件中只需要根据自己情况修改<code>jobs:steps:uses</code>和<code>external_repository:(代码仓库b的地址)</code>即可。
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>name<span style="">:</span> GitHub Pages
 </span></span><span style="display:flex;"><span>on<span style="">:</span>
@@ -280,7 +280,7 @@
 </span></span><span style="display:flex;"><span>          publish_branch<span style="">:</span> master
 </span></span><span style="display:flex;"><span>          publish_dir<span style="">:</span> .<span style="">/</span>public
 </span></span></code></pre></div>``</li>
-<li>创建完成后，每次推送代码仓库a，代码仓库b就能同步更新，然后输入自己博客平台域名即可<img src="static/images/BlogImages/Pasted%20image%2020220520212439.png" alt=""></li>
+<li>创建完成后，每次推送代码仓库a，代码仓库b就能同步更新，然后输入自己博客平台域名即可!<img src="https://img.allworldg.xyz/2022/05/4a6a87f1bdc187e99d53dab79f667810.png" alt=""></li>
 </ol>
 </li>
 </ol>
@@ -290,7 +290,7 @@
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
-<p>简单好搭建博客后，对于博客其他优化以及功能问题，例如：图床挑选，cdn加速，seo优化，评论功能，广告系统等等在之后慢慢实现，同时我也会同步更新相关文章。当然，最重要地还是勤写博客，做好总结。<a href="https://allworldg.github.io/">allworldg：菜鸟小白的个人空间</a></p>
+<p>简单好搭建博客后，对于博客其他优化以及功能问题，例如：图床挑选，cdn加速，seo优化，评论功能，广告系统等等在之后慢慢实现，同时我也会同步更新相关文章。当然，最重要地还是勤写博客，做好总结。<a href="https://allworldg.xyz/">allworldg：菜鸟小白的个人空间</a></p>
 
   </article>
 </section>

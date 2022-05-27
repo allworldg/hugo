@@ -2,26 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://allworldg.github.io/</loc>
+    <loc>https://hugo-c1e.pages.dev/</loc>
     <lastmod>2022-05-16T22:08:57+08:00</lastmod>
   </url><url>
-    <loc>http://allworldg.github.io/blogs/</loc>
+    <loc>https://hugo-c1e.pages.dev/blogs/</loc>
     <lastmod>2022-05-16T22:08:57+08:00</lastmod>
   </url><url>
-    <loc>http://allworldg.github.io/blogs/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/</loc>
+    <loc>https://hugo-c1e.pages.dev/blogs/guide-to-setup-blog-with-zero-cost-1/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/</loc>
     <lastmod>2022-05-16T22:08:57+08:00</lastmod>
   </url><url>
-    <loc>http://allworldg.github.io/about/</loc>
+    <loc>https://hugo-c1e.pages.dev/about/</loc>
     <lastmod>2022-05-15T21:56:16+08:00</lastmod>
   </url><url>
-    <loc>http://allworldg.github.io/tag/</loc>
+    <loc>https://hugo-c1e.pages.dev/tag/</loc>
     <lastmod>2022-05-15T21:55:40+08:00</lastmod>
   </url><url>
-    <loc>http://allworldg.github.io/blogs/first-blog/</loc>
-    <lastmod>2022-05-15T21:16:52+08:00</lastmod>
+    <loc>https://hugo-c1e.pages.dev/categories/</loc>
   </url><url>
-    <loc>http://allworldg.github.io/categories/</loc>
-  </url><url>
-    <loc>http://allworldg.github.io/tags/</loc>
+    <loc>https://hugo-c1e.pages.dev/tags/</loc>
   </url>
 </urlset>
