@@ -19,13 +19,24 @@ draft: true
 	2. 缺点（风险）：流量费用很高，这里流量指的是用户通过外链访问或者下载资源时会生成流量。以腾讯云为例，0.5元/GB流量费用，如果是个人当博客图床小范围使用还好。当访问量上升，或者外链被他人分享使用，就有可能导致费用暴涨，更不用提如果被恶意下载刷流量。目前个人已知的存储桶只能设置上限预警，在欠费几小时后被动关闭。（七牛云各种免费额度很高，不过需要备案域名）
 	3. 解决：使用cdn加速来大幅度减少流量费，同时cdn设置上限阈值。隐藏文件原链接，设置防盗链等方法。这样已经能很大程度降低天价账单的可能性，同时正常使用也不容易碰到恶意攻击的情况。
 2. 使用现成图床：例如SMMS图床服务。优点是有免费额度，也有付费选项，无需担心上述费用过高问题。缺点：需自行选择稳定图床厂商，因为有跑路风险。
-3. 白嫖(不推荐) ：使用github、gitee、甚至是csdn、新浪微博等。优点：完全免费，可以把图片上传到任意能上传的位置。缺点：首先个人是不推荐，例如github、gitee被当作图床有可能遭到封禁。同时一旦白嫖网站加入了防盗链规则，那么博客图片直接全部报废，例子有gitee和微博。
-4. 使用国外大厂的对象存储服务：本质上和国内对象存储服务类似，只不过有些优惠力度很大。例如[backblaze](https://www.backblaze.com/)(我个人推荐同时也是本篇博客图床最终使用的对象)。好处有：
-	1. 它的免费计划包括：存储桶前10GB免费、每天1GB下载流量、2500次B、C下载请求次数。并且它的存储费用在几个大厂对比是最便宜的。![](BlogImages/Pasted%20image%2020220525215003.png)
+3. 白嫖(不推荐) ：使用[github](https://github.com/)、gitee、甚至是csdn、新浪微博等。优点：完全免费，可以把图片上传到任意能上传的位置。缺点：首先个人是不推荐，例如github、gitee被当作图床有可能遭到封禁。同时一旦白嫖网站加入了防盗链规则，那么博客图片直接全部报废，例子有gitee和微博。
+4. 使用国外大厂的对象存储服务：本质上和国内对象存储服务类似，只不过有些优惠力度很大。例如[backblaze](https://www.backblaze.com/)，又称B2(我个人推荐同时也是本篇博客图床最终使用的对象)。好处有：
+	1. 它的免费计划包括：存储桶前10GB免费、每天1GB下载流量、2500次B、C下载请求次数。并且它的存储费用在几个大厂对比是最便宜的。![](https://img.allworldg.xyz/2022/05/f770decba46d0ea9b7d89f2eb6813214.png)
 	2. 存储桶无需担心天价流量费：结合[cloudflare](www.cloudflare.com)免费的cdn加速，以及cloudflare回流到backblaze的流量免费（回流：当请求到cdn结点发现该资源不存在或者需要更新，cdn会去backblaze获取最新文件），对于白嫖党来说应该算很香了。同时我咨询客服恶意下载问题，客服回应当超过自己设置的上限，会暂停下载，直到用户支付了正常的上限金额后正常开放（免费则是等待第二天免费额度恢复即可）。最后一点我还没有亲自测试过。
 	3. 缺点：免费版cf在国内没有结点，可能加速变成减速，不过cf还是较稳定。后期如果想加入付费计划，可能需要准备一张全币种信用卡。
 ## 图床搭建
-
+1. 首先进入[backblaze](www.backblaze.com), 创建一个账号，点击右上角 My Account，然后创建一个桶。![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526161034.png) ![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526161525.png)设置public可以用外链访问（如果设置Private，结合cdn使用访问授权只有七天，需要不断更新）。
+2. 点击upload尝试上传一张图片，然后在桶文件列表里查看。![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526164643.png) 通过url即可访问。
+## 图床结合PicGo使用
+我们不想每次上传图片都得打开网站，所以使用PicGo上传图片。
+1. 傻瓜式下载安装[PicGo](https://picgo.github.io/PicGo-Doc/)。
+2. 因为B2支持S3，所以PicGo通过插件列表安装S3插件。
+3. B2生成App Key，点击左侧链接，然后点击 Add a New Application Key 。![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526165445.png) ![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526165517.png)注意Allow listing一定要选中，Duration不填代表永久有效。
+4. 生成的key只会出现一次，可以自行保存，也可以重新创建。
+5. 点击PicGo软件左侧图床设置，选中Amazon S3（装了插件才有），将对应key信息填入即可。配置完毕即可自行上传。如遇报错大概率是某行信息复制粘贴时多了空格，或者是EndPoint忘填，自行检查。
 ## cdn加速
+在图床选择时说过，存储桶流量费很贵，所以我们要通过cdn缓存内容，减少流量费。我这里选择的是Cloudflare，自带https支持，免费流量，免费次数，回流B2免费。
+1. 自行创建
+
 
 

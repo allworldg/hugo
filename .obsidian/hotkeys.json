@@ -40,5 +40,7 @@
       "key": "E"
     }
   ],
-  "editor:delete-paragraph": []
+  "editor:delete-paragraph": [],
+  "obsidian-excalidraw-plugin:insert-link-to-element": [],
+  "Enhanced editing:add-lines": []
 }

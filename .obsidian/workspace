@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/blogs/零成本搭建个人博客搭建篇.md",
+            "file": "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "hui",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/blogs/零成本搭建个人博客搭建篇.md",
+                "file": "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/blogs/零成本搭建个人博客搭建篇.md"
+                "file": "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md"
               }
             }
           }
@@ -108,15 +108,15 @@
   },
   "active": "cd8217f4397e637b",
   "lastOpenFiles": [
-    "content/blogs/零成本搭建个人博客搭建篇.md",
-    "content/blogs/零成本搭建个人博客之图床和cdn加速.md",
-    "content/blogs/first-blog.md",
-    "BlogImages/Pasted image 20220519172445.png",
-    "BlogImages/Pasted image 20220525215003.png",
-    "BlogImages/Pasted image 20220520211637.png",
-    "BlogImages/Pasted image 20220520212439.png",
-    "static/images/dog.png",
-    "static/images/favicon-16x16.png",
-    "static/images/favicon-32x32.png"
+    "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-2/零成本搭建个人博客之迁移Pages和域名.md",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-3/零成本搭建个人博客之图床和cdn加速.md",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526093510.png",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161034.png",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161117.png",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161525.png",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526164643.png",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161123.png",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-1/images/Pasted image 20220526093331.png"
   ]
 }
