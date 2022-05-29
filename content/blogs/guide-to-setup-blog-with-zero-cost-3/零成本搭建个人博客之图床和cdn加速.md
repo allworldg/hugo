@@ -25,13 +25,13 @@ draft: true
 	2. 存储桶无需担心天价流量费：结合[cloudflare](www.cloudflare.com)免费的cdn加速，以及cloudflare回流到backblaze的流量免费（回流：当请求到cdn结点发现该资源不存在或者需要更新，cdn会去backblaze获取最新文件），对于白嫖党来说应该算很香了。同时我咨询客服恶意下载问题，客服回应当超过自己设置的上限，会暂停下载，直到用户支付了正常的上限金额后正常开放（免费则是等待第二天免费额度恢复即可）。最后一点我还没有亲自测试过。
 	3. 缺点：免费版cf在国内没有结点，可能加速变成减速，不过cf还是较稳定。后期如果想加入付费计划，可能需要准备一张全币种信用卡。
 ## 图床搭建
-1. 首先进入[backblaze](www.backblaze.com), 创建一个账号，点击右上角 My Account，然后创建一个桶。![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526161034.png) ![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526161525.png)设置public可以用外链访问（如果设置Private，结合cdn使用访问授权只有七天，需要不断更新）。
-2. 点击upload尝试上传一张图片，然后在桶文件列表里查看。![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526164643.png) 通过url即可访问。
+1. 首先进入[backblaze](www.backblaze.com), 创建一个账号，点击右上角 My Account，然后创建一个桶。![](images/Pasted%20image%2020220526161034.png) ![](images/Pasted%20image%2020220526161525.png)设置public可以用外链访问（如果设置Private，结合cdn使用访问授权只有七天，需要不断更新）。
+2. 点击upload尝试上传一张图片，然后在桶文件列表里查看。![](images/Pasted%20image%2020220526164643.png) 通过url即可访问。
 ## 图床结合PicGo使用
 我们不想每次上传图片都得打开网站，所以使用PicGo上传图片。
 1. 傻瓜式下载安装[PicGo](https://picgo.github.io/PicGo-Doc/)。
 2. 因为B2支持S3，所以PicGo通过插件列表安装S3插件。
-3. B2生成App Key，点击左侧链接，然后点击 Add a New Application Key 。![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526165445.png) ![](content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted%20image%2020220526165517.png)注意Allow listing一定要选中，Duration不填代表永久有效。
+3. B2生成App Key，点击左侧链接，然后点击 Add a New Application Key 。![](images/Pasted%20image%2020220526165445.png) ![](images/Pasted%20image%2020220526165517.png)注意Allow listing一定要选中，Duration不填代表永久有效。
 4. 生成的key只会出现一次，可以自行保存，也可以重新创建。
 5. 点击PicGo软件左侧图床设置，选中Amazon S3（装了插件才有），将对应key信息填入即可。配置完毕即可自行上传。如遇报错大概率是某行信息复制粘贴时多了空格，或者是EndPoint忘填，自行检查。
 ## cdn加速

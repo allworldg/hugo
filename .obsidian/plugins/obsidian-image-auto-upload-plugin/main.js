@@ -2481,6 +2481,9 @@ var imageAutoUploadPlugin = /** @class */ (function (_super) {
                 var encodedUri = match.path;
                 if (!encodedUri.startsWith("http")) {
                     var abstractImageFile = decodeURI(path.join(basePath, path.posix.resolve(path.posix.join("/", thisPath.parent.path), encodedUri)));
+                    console.log(path.join(basePath, path.posix.resolve(path.posix.join("/", thisPath.parent.path)
+                    , encodedUri)));
+                    console.log(match.source)
                     if (fs.existsSync(abstractImageFile) &&
                         isAssetTypeAnImage(abstractImageFile)) {
                         imageList.push({

@@ -3,7 +3,7 @@
   "foldHeading": true,
   "strictLineBreaks": false,
   "newFileLocation": "current",
-  "newLinkFormat": "absolute",
+  "newLinkFormat": "relative",
   "attachmentFolderPath": "./images",
   "showLineNumber": false,
   "vimMode": false,

@@ -1,43 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Allworldg Blog</title>
-    <link>https://hugo-c1e.pages.dev/</link>
-    <description>Recent content on Allworldg Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 May 2022 22:08:57 +0800</lastBuildDate><atom:link href="https://hugo-c1e.pages.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>零成本搭建个人博客搭建篇</title>
-      <link>https://hugo-c1e.pages.dev/blogs/guide-to-setup-blog-with-zero-cost-1/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/</link>
-      <pubDate>Mon, 16 May 2022 22:08:57 +0800</pubDate>
-      
-      <guid>https://hugo-c1e.pages.dev/blogs/guide-to-setup-blog-with-zero-cost-1/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/</guid>
-      <description>为什么要搭建个人博客尽管已经有很多成型的在线博客平台供大家使用（csdn，博客园，掘金等），但是它们都有一些很明显的弊端，例如账号以及博客内容受到监管，所有权不属于作者本人，对于博客平台的功能diy自由度很低。
-所以为了尽可能自由写作，我们还是简单搭建一个博客平台吧。除了独立自由以外，自建个人博客还有以下好处：
- 个人名片打造 文章归档分类 广告被动收入  博客平台选型网上流行的博客平台主要分为两大类：动态博客平台以及静态博客平台。动态博客中最强大的当属WordPress，该平台作为cms（内容提供系统）拥有庞大的用户基数，各种网站和论坛都可以直接使用它来搭建。静态博客中个人认为很有名的则是Hexo以及Hugo，这两者本身大同小异，我之前用的就是Hexo，现在则切换到本篇写作的主题：Hugo。
-   比较 wordpress hexo &amp;amp; hugo     搭建要求 一台服务器以及运行环境 静态生成页面，无需服务器。   性能 由于是动态生成页面，可以通过自行配置提高性能，但是仍然无法媲美静态页面 几乎无需考虑性能问题   访问速度 依赖于服务器配置以及cdn加速。 只需考虑cdn加速   功能完善 作为强大的cms功能很完善，需要的功能基本可以插件下载直接实现。 额外功能也可以通过插件实现，不过稍微需要自行查找以及diy   后台管理 现成的后台管理功能，开箱即用 由于静态博客，本身没有后台管理，有需求需要自行搜索实现    通过比较以及个人轻度使用经历，WordPress对于我来说，意味着每年要花费一点小钱维护服务器，同时还需要稍微注意一下服务器以及网站安全，当服务器过期不想付费时还需要备份以及导出，这对于我只想单纯写点博客实在太过繁琐，所以暂时放弃。静态博客中Hexo我也轻度用过，主题很多，功能也比较齐全，只是相比Hugo，由于构建博客依赖NodeJs，所以本地构建需要环境基础，速度也没有那么快，迁移稍微麻烦些。（如果使用代码托管平台自动构建，则两者基本没差别）。
-说到本篇博客主角：Hugo。基于Go语言编写，优点在于本地构建速度超快，同时无需准备任何前提环境，只需要简单配置即可。它可以很简洁，也可以根据个人需求以及diy能力变得功能强大，“花里胡哨”。虽然比Hexo发家晚，但是star数和fork数远远超过前者。所以从本篇博客开始，我打算一边慢慢升级个人博客，同时陆陆续续写博客搭建升级系列。
-本地博客搭建 直接从https://github.com/gohugoio/hugo/releases下载windows二进制压缩包。解压，将.exe运行文件放入bin目录下，然后将bin目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。 为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。 用命令创建新博客项目 hugo new site &#39;your BlogSite name（此处我自定义命名为&#39;HugoBlog&#39;&#39; 。创建完成后进入新生成的文件夹，可以看到以下文件结构。 content目录下存放文章，themes存放主题，config.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://hugo-c1e.pages.dev/about/</link>
-      <pubDate>Sun, 15 May 2022 21:56:16 +0800</pubDate>
-      
-      <guid>https://hugo-c1e.pages.dev/about/</guid>
-      <description>此处建设中。。。。。。</description>
-    </item>
-    
-    <item>
-      <title>Tag</title>
-      <link>https://hugo-c1e.pages.dev/tag/</link>
-      <pubDate>Sun, 15 May 2022 21:55:40 +0800</pubDate>
-      
-      <guid>https://hugo-c1e.pages.dev/tag/</guid>
-      <description>此处建设中。。。。。</description>
-    </item>
-    
-  </channel>
-</rss>

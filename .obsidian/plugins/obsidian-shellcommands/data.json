@@ -1,0 +1,67 @@
+{
+  "settings_version": "0.12.0",
+  "debug": false,
+  "obsidian_command_palette_prefix": "Execute: ",
+  "preview_variables_in_command_palette": true,
+  "show_autocomplete_menu": true,
+  "working_directory": "",
+  "default_shells": {
+    "darwin": "/bin/bash",
+    "linux": "/bin/bash"
+  },
+  "error_message_duration": 20,
+  "notification_message_duration": 10,
+  "output_channel_clipboard_also_outputs_to_notification": true,
+  "enable_events": true,
+  "shell_commands": {
+    "0": {
+      "platform_specific_commands": {
+        "default": "git add . ;  git commit -m \"{{_message}}\" ; git push origin master -u;"
+      },
+      "shells": {},
+      "alias": "",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "s2ss0ivusd"
+        }
+      ],
+      "variable_default_values": {}
+    }
+  },
+  "prompts": [
+    {
+      "id": "s2ss0ivusd",
+      "title": "message",
+      "description": "message for git commit",
+      "preview_shell_command": false,
+      "fields": [
+        {
+          "label": "What is your git message",
+          "description": "what is you git message",
+          "default_value": "",
+          "target_variable_id": "zjrj2n18kf",
+          "required": true
+        }
+      ],
+      "execute_button_text": "Execute"
+    }
+  ],
+  "custom_variables": [
+    {
+      "id": "zjrj2n18kf",
+      "name": "message",
+      "description": "git message"
+    }
+  ]
+}

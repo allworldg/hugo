@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "cd8217f4397e637b",
+        "id": "63d4b7872326868f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md",
+            "file": "content/blogs/guide-to-setup-blog-with-zero-cost-2/零成本搭建个人博客之迁移Pages和域名.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md",
+                "file": "content/blogs/guide-to-setup-blog-with-zero-cost-2/零成本搭建个人博客之迁移Pages和域名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md"
+                "file": "content/blogs/guide-to-setup-blog-with-zero-cost-2/零成本搭建个人博客之迁移Pages和域名.md"
               }
             }
           }
@@ -106,17 +106,17 @@
     "width": 271,
     "collapsed": true
   },
-  "active": "cd8217f4397e637b",
+  "active": "63d4b7872326868f",
   "lastOpenFiles": [
-    "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md",
     "content/blogs/guide-to-setup-blog-with-zero-cost-2/零成本搭建个人博客之迁移Pages和域名.md",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-1/零成本搭建个人博客搭建篇.md",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-1/images/4a6a87f1bdc187e99d53dab79f667810.png",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-1/images/image-0826acc0122d80fffd1670838d76264d.png",
+    "content/blogs/guide-to-setup-blog-with-zero-cost-1/images/Pasted image 20220526093331.png",
+    "test.md",
+    "content/tag.md",
     "content/blogs/guide-to-setup-blog-with-zero-cost-3/零成本搭建个人博客之图床和cdn加速.md",
-    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526093510.png",
-    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161034.png",
-    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161117.png",
-    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161525.png",
-    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526164643.png",
-    "content/blogs/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161123.png",
-    "content/blogs/guide-to-setup-blog-with-zero-cost-1/images/Pasted image 20220526093331.png"
+    "content/blogs/guide-to-setup-blog-with-zero-cost-2/images/Pasted image 20220527113307.png",
+    "tttt/测试.md"
   ]
 }
