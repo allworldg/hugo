@@ -5,10 +5,7 @@
   "preview_variables_in_command_palette": true,
   "show_autocomplete_menu": true,
   "working_directory": "",
-  "default_shells": {
-    "darwin": "/bin/bash",
-    "linux": "/bin/bash"
-  },
+  "default_shells": {},
   "error_message_duration": 20,
   "notification_message_duration": 10,
   "output_channel_clipboard_also_outputs_to_notification": true,
@@ -16,7 +13,8 @@
   "shell_commands": {
     "0": {
       "platform_specific_commands": {
-        "default": "git add . ;  git commit -m \"{{_message}}\" ; git push origin master -u;"
+        "default": "git add . && git commit -m \"{{_message}}\" && git push origin master -u",
+        "darwin": "gitadd ."
       },
       "shells": {},
       "alias": "",
