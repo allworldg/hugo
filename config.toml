@@ -10,13 +10,18 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true 
 cleanDestinationDir = true # clean obsolete or unrelated static file
 
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+
 [params]
 author = "Allworldg"
 description = "Allworldg's personal website"
 keywords = "blog,developer,personal"
 info = ["一个菜鸟小白的个人空间"]
 avatarURL = "images/dog.png"
-dateFormat = "January 2, 2006"
+dateFormat = "2006-01-02"
 since = 2022
 colorScheme = "auto"
 hideColorSchemeToggle = false
@@ -31,14 +36,18 @@ url = "https://github.com/allworldg/"
 [languages]
       [languages.zh-cn.menu]
           [[languages.zh-cn.menu.main]]
-              name = "Blog"
+              name = "技术"
               weight = 1
-              url  = "blogs/"
+              url  = "dev/"
           [[languages.zh-cn.menu.main]]
-              name = "分类"
+              name = "学习"
               weight = 2
               url = "tag/"
           [[languages.zh-cn.menu.main]]
               name = "关于"
               weight = 3
               url  = "about/"
+          [[languages.zh-cn.menu.main]]
+              name = "posts"
+              weight = 4
+              url = "posts/"

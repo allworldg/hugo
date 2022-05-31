@@ -1,6 +1,6 @@
 ---
 title: "零成本搭建个人博客之迁移Pages和域名"
-date: 2022-05-27T10:45:55+08:00
+date: 2022-05-25T10:45:55+08:00
 draft: false
 ---
 
@@ -23,7 +23,7 @@ Cloudflare Page支持直接从Github仓库拉取文件并且自动部署，无�
 	bailey.ns.cloudflare.com
 	```
 
-![](https://img.allworldg.xyz/2022/05/ef297273cba302a59f79d44b6685035b.png)
+	![](https://img.allworldg.xyz/2022/05/ef297273cba302a59f79d44b6685035b.png)
 
 设置CloudFlare（CF)：
 1. 首先自行添加个人域名。
