@@ -29,10 +29,17 @@ tags : ["个人博客","环境搭建"]
 	2. 存储桶无需担心天价流量费：结合[cloudflare](www.cloudflare.com)免费的cdn加速，以及cloudflare回流到backblaze的流量免费（回流：当请求到cdn结点发现该资源不存在或者需要更新，cdn会去backblaze获取最新文件），对于白嫖党来说应该算很香了。同时我咨询客服恶意下载问题，客服回应当超过自己设置的上限，会暂停下载，直到用户支付了正常的上限金额后正常开放（免费则是等待第二天免费额度恢复即可）。最后一点我还没有亲自测试过。
 	3. 缺点：免费版cf在国内没有结点，可能加速变成减速，不过cf还是较稳定。后期如果想加入付费计划，可能需要准备一张全币种信用卡。
 ## 图床搭建
-1. 首先进入[backblaze](www.backblaze.com), 创建一个账号，点击右上角 My Account，然后创建一个桶。![](images/Pasted%20image%2020220526161034.png) ![](images/Pasted%20image%2020220526161525.png)设置public可以用外链访问（如果设置Private，结合cdn使用访问授权只有七天，需要不断更新）。
-2. 点击upload尝试上传一张图片，然后在桶文件列表里查看。![](images/Pasted%20image%2020220526164643.png) 通过url即可访问。
-3. 设置缓存。打开Bucket Settings。输入参数`{"cache-control":"max-age=172800"}` ，意味着下文设置的cdn读取一次资源后，会缓存并且隔172800s后才过期重新读取。如果在cdn中设置了资源缓存时长，这个bucket时长相当于无效，但还是当作一个备用方案使用。
-   ![](images/Pasted%20image%2020220601110434.png)
+1. 首先进入[backblaze](www.backblaze.com), 创建一个账号，点击右上角 My Account，然后创建一个桶。![](https://img.allworldg.xyz/2022/06/cbd7aa878464e4fd6ee552f7ff12f931.png) ![](https://img.allworldg.xyz/2022/06/a022d961da1e8bcc8300e1d0571863d5.png)
+  
+	 设置public可以用外链访问（如果设置Private，结合cdn使用访问授权只有七天，需要不断更新）。
+1. 点击upload尝试上传一张图片，然后在桶文件列表里查看。
+   
+   ![](https://img.allworldg.xyz/2022/06/c1a895be1a8de0a1a9a3a44a1e07de4d.png) 
+   
+   通过url即可访问。
+2. 设置缓存。打开Bucket Settings。输入参数`{"cache-control":"max-age=172800"}` ，意味着下文设置的cdn读取一次资源后，会缓存并且隔172800s后才过期重新读取。如果在cdn中设置了资源缓存时长，这个bucket时长相当于无效，但还是当作一个备用方案使用。
+   
+   ![](https://img.allworldg.xyz/2022/06/5eb13e1c30ca4a4b02211178b9dc1bf0.png)
    
    需要注意，时间设置过长，相同路径的资源如果发生修改，会在缓存时间到期后才能更新，过短则回源次数变多，自行考虑即可（我当作图床，理论上大一点没事）。
 
@@ -40,22 +47,28 @@ tags : ["个人博客","环境搭建"]
 在图床选择时说过，存储桶流量费很贵，所以我们要通过cdn缓存内容，减少流量费。我这里选择的是Cloudflare，自带https支持，免费流量，免费次数，回流B2免费。
 1. 进入CF指定域名的控制台
 2. 点击DNS，添加CNAME(Target 是 B2存储桶的Friendly 域名)
-	   ![](images/Pasted%20image%2020220601112120.png)
-3. 我们也可以自行设置相关资源的缓存规则。![](images/Pasted%20image%2020220601130105.png)
-4. 为了不暴露源桶域名，我们需要对域名进行重写。网上教程有很多使用Workers，如今CF推出了Transform Rules，更快更方便。进入URL Rwrite。
-   ![](images/Pasted%20image%2020220601112401.png)
+
+   ![](images/Pasted%20image%2020220601112120.png)
+1. 我们也可以自行设置相关资源的缓存规则。
+   
+   ![](https://img.allworldg.xyz/2022/06/29b266e62325508f065c2e538ef3894b.png)
+2. 为了不暴露源桶域名，我们需要对域名进行重写。网上教程有很多使用Workers，如今CF推出了Transform Rules，更快更方便。进入URL Rwrite。
+   
+   
+   ![](https://img.allworldg.xyz/2022/06/d2cb2e5eb46c9ba1d74c0d66e02fdaa3.png)
+   
    然后输入即可。`concat("/file/桶名",http.request.uri.path)`，意思是在域名后添加括号里的两个参数。
-   ![](images/Pasted%20image%2020220601112602.png)
+   ![](https://img.allworldg.xyz/2022/06/0c516e201faed9f75e5b5ef71e4ff6da.png)
 4. 可以打开桶内图片，然后试着修改前面的域名，访问成功即可。
 ## 图床结合PicGo使用
 我不想每次上传图片都得打开网站，所以使用PicGo上传图片。
 1. 傻瓜式下载安装[PicGo](https://picgo.github.io/PicGo-Doc/)。
 2. 因为B2支持S3，所以PicGo通过插件列表安装S3插件。
-3. B2生成App Key，点击左侧链接，然后点击 Add a New Application Key 。![](images/Pasted%20image%2020220526165445.png) ![](images/Pasted%20image%2020220526165517.png)注意Allow listing一定要选中，Duration不填代表永久有效。
+3. B2生成App Key，点击左侧链接，然后点击 Add a New Application Key 。
+   ![](https://img.allworldg.xyz/2022/06/15548cf6ea38a2c68700c6bcda27a9e2.png) ![](https://img.allworldg.xyz/2022/06/8d54bdebf258e484051c789f16761122.png)注意Allow listing一定要选中，Duration不填代表永久有效。
 4. 生成的key只会出现一次，可以自行保存，也可以重新创建。
 5. 点击PicGo软件左侧图床设置，选中Amazon S3（装了插件才有），将对应key信息填入即可。配置完毕即可自行上传。如遇报错大概率是某行信息复制粘贴时多了空格，或者是EndPoint忘填，自行检查。
-   ![](images/Pasted%20image%2020220601130318.png)
+   ![](https://img.allworldg.xyz/2022/06/6e2c962ae44d38c7b40ba82b03e21e22.png)
 
 至此，博客站点的基础功能已经实现完毕，剩下的可以根据自己需求随意DIY了。
-
 
