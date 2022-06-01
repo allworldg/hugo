@@ -38,17 +38,18 @@ url = "https://github.com/allworldg/"
               weight = 1
               url  = "dev/"
           [[languages.zh-cn.menu.main]]
-              name = "学习"
+              name = "随笔"
               weight = 2
-              url = "tag/"
+              url  = "essay/"
+          [[languages.zh-cn.menu.main]]
+              name = "学习"
+              weight = 3
+              url = "learn/"
           [[languages.zh-cn.menu.main]]
               name = "关于"
-              weight = 3
-              url  = "about/"
-          [[languages.zh-cn.menu.main]]
-              name = "posts"
               weight = 4
-              url = "posts/"
+              url  = "about/"
+         
 
 
 [markup]

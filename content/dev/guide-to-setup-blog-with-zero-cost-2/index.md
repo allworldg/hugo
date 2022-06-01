@@ -6,7 +6,9 @@ categories : ["个人博客搭建"]
 tags : ["个人博客","环境搭建"]
 ---
 
-在上文[零成本搭建个人博客之搭建篇](https://allworldg.xyz/blogs/%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AF%87/)中，我将Hugo博客搭建到 Github Page上，后来考虑到用 Cloudflare cdn加速，干脆就把博客站点迁移到Cloudflare Page上，方便管理。
+> 本文属于[零成本搭建个人博客指南](https://allworldg.xyz/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)系列
+
+在上文[零成本搭建个人博客之搭建篇](https://allworldg.xyz/dev/guide-to-setup-blog-with-zero-cost-1/)中，我将Hugo博客搭建到 Github Page上，后来考虑到用 Cloudflare cdn加速，干脆就把博客站点迁移到Cloudflare Page上，方便管理。
 ## 迁移至Cloudflare Page
 Cloudflare Page支持直接从Github仓库拉取文件并且自动部署，无需额外创建github actions，同时自带cdn加速以及二级域名，整体配置比较简单。
 1. 创建一个[CloudFlare](https://www.cloudflare.com/)账号

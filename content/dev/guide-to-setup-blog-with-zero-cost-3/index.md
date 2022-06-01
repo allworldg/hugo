@@ -5,6 +5,8 @@ draft: false
 categories : ["个人博客搭建"]
 tags : ["个人博客","环境搭建"]
 ---
+
+> 本文属于[零成本搭建个人博客指南](https://allworldg.xyz/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)系列
 ## 为什么要使用图床
 1.  博客文章中的图片资源文件一般采用本地相对/绝对路径引用，或者使用图床通过外链进行引用展示。本地引用的弊端我认为在于：
 	1. 图片和博客放在同一个代码托管仓库，会导致页面加载和构建速度随着图片数量和体积变大导致缓慢。
@@ -29,16 +31,31 @@ tags : ["个人博客","环境搭建"]
 ## 图床搭建
 1. 首先进入[backblaze](www.backblaze.com), 创建一个账号，点击右上角 My Account，然后创建一个桶。![](images/Pasted%20image%2020220526161034.png) ![](images/Pasted%20image%2020220526161525.png)设置public可以用外链访问（如果设置Private，结合cdn使用访问授权只有七天，需要不断更新）。
 2. 点击upload尝试上传一张图片，然后在桶文件列表里查看。![](images/Pasted%20image%2020220526164643.png) 通过url即可访问。
+3. 设置缓存。打开Bucket Settings。输入参数`{"cache-control":"max-age=172800"}` ，意味着下文设置的cdn读取一次资源后，会缓存并且隔172800s后才过期重新读取。如果在cdn中设置了资源缓存时长，这个bucket时长相当于无效，但还是当作一个备用方案使用。
+   ![](images/Pasted%20image%2020220601110434.png)
+   
+   需要注意，时间设置过长，相同路径的资源如果发生修改，会在缓存时间到期后才能更新，过短则回源次数变多，自行考虑即可（我当作图床，理论上大一点没事）。
+
+## cdn加速
+在图床选择时说过，存储桶流量费很贵，所以我们要通过cdn缓存内容，减少流量费。我这里选择的是Cloudflare，自带https支持，免费流量，免费次数，回流B2免费。
+1. 进入CF指定域名的控制台
+2. 点击DNS，添加CNAME(Target 是 B2存储桶的Friendly 域名)
+	   ![](images/Pasted%20image%2020220601112120.png)
+3. 我们也可以自行设置相关资源的缓存规则。![](images/Pasted%20image%2020220601130105.png)
+4. 为了不暴露源桶域名，我们需要对域名进行重写。网上教程有很多使用Workers，如今CF推出了Transform Rules，更快更方便。进入URL Rwrite。
+   ![](images/Pasted%20image%2020220601112401.png)
+   然后输入即可。`concat("/file/桶名",http.request.uri.path)`，意思是在域名后添加括号里的两个参数。
+   ![](images/Pasted%20image%2020220601112602.png)
+4. 可以打开桶内图片，然后试着修改前面的域名，访问成功即可。
 ## 图床结合PicGo使用
-我们不想每次上传图片都得打开网站，所以使用PicGo上传图片。
+我不想每次上传图片都得打开网站，所以使用PicGo上传图片。
 1. 傻瓜式下载安装[PicGo](https://picgo.github.io/PicGo-Doc/)。
 2. 因为B2支持S3，所以PicGo通过插件列表安装S3插件。
 3. B2生成App Key，点击左侧链接，然后点击 Add a New Application Key 。![](images/Pasted%20image%2020220526165445.png) ![](images/Pasted%20image%2020220526165517.png)注意Allow listing一定要选中，Duration不填代表永久有效。
 4. 生成的key只会出现一次，可以自行保存，也可以重新创建。
 5. 点击PicGo软件左侧图床设置，选中Amazon S3（装了插件才有），将对应key信息填入即可。配置完毕即可自行上传。如遇报错大概率是某行信息复制粘贴时多了空格，或者是EndPoint忘填，自行检查。
-## cdn加速
-在图床选择时说过，存储桶流量费很贵，所以我们要通过cdn缓存内容，减少流量费。我这里选择的是Cloudflare，自带https支持，免费流量，免费次数，回流B2免费。
-1. 自行创建
+   ![](images/Pasted%20image%2020220601130318.png)
 
+至此，博客站点的基础功能已经实现完毕，剩下的可以根据自己需求随意DIY了。
 
 
