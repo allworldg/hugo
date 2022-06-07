@@ -1,10 +1,10 @@
-+++ 
-draft = true
-date = {{ .Date }}
-title = ""
-description = ""
-slug = "" 
-tags = []
-categories = []
-externalLink = ""
-+++
+---
+title: "{{ replace .Name "-" " " | title }}"
+draft : true
+date : {{ .Date }}
+description : ""
+slug : "" 
+tags : []
+categories : []
+externalLink : ""
+---

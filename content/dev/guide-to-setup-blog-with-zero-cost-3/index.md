@@ -48,7 +48,7 @@ tags : ["个人博客","环境搭建"]
 1. 进入CF指定域名的控制台
 2. 点击DNS，添加CNAME(Target 是 B2存储桶的Friendly 域名)
 
-   ![](images/Pasted%20image%2020220601112120.png)
+   ![](https://img.allworldg.xyz/2022/06/2db7073202f70e4eb0d9893612a79325.png)
 1. 我们也可以自行设置相关资源的缓存规则。
    
    ![](https://img.allworldg.xyz/2022/06/29b266e62325508f065c2e538ef3894b.png)

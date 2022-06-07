@@ -2509,6 +2509,7 @@ var imageAutoUploadPlugin = /** @class */ (function (_super) {
                         abstractImageFile = decodeURI(path.join(basePath, path.posix.resolve(path.posix.join("/", thisPath.parent.path), encodedUri)));
                     }
                     else {
+                        console.log(path.join(basePath,encodedUri))
                         abstractImageFile = decodeURI(path.join(basePath, encodedUri));
                     }
                     if (fs.existsSync(abstractImageFile) &&

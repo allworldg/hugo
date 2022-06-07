@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/dev/guide-to-setup-blog-with-zero-cost-3/index.md",
+            "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hui",
+                "query": "tag:#个人博客",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -50,7 +50,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -78,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/dev/guide-to-setup-blog-with-zero-cost-3/index.md",
+                "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,28 +96,39 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/dev/guide-to-setup-blog-with-zero-cost-3/index.md"
+                "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md"
+              }
+            }
+          },
+          {
+            "id": "e24fb090742d3152",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 271,
-    "collapsed": true
+    "width": 271
   },
   "active": "63d4b7872326868f",
   "lastOpenFiles": [
+    "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
     "content/dev/guide-to-setup-blog-with-zero-cost-3/index.md",
     "content/dev/guide-to-setup-blog-with-zero-cost-2/index.md",
-    "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
-    "content/dev/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526165517.png",
-    "content/dev/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526165445.png",
-    "content/dev/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161117.png",
-    "content/dev/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526161034.png",
-    "content/dev/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526093510.png",
-    "content/tag.md",
-    "ttttt/hhh/ttt/asdf.md"
+    "content/learn/ruoyi-learn-1/index.md",
+    "archetypes/learn.md",
+    "archetypes/essay.md",
+    "archetypes/dev.md",
+    "archetypes/default.md",
+    "content/dev/testhahah/slkdf.md",
+    "content/dev/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526165517.png"
   ]
 }
