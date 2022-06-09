@@ -13,7 +13,7 @@
   "shell_commands": {
     "0": {
       "platform_specific_commands": {
-        "default": "git add . && git commit -m \"{{_message}}\" && git push origin master -u",
+        "default": "git add . && git commit -m \"{{_message}}\" && git push origin master ",
         "darwin": "gitadd ."
       },
       "shells": {},

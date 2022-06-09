@@ -30,7 +30,9 @@ externalLink : ""
 
 4. 重启电脑让设置生效。
 
-5. 下载linux内核更新包并且运行更新。https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+5. 下载linux内核更新包并且运行更新。
+   
+   [https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
 6. （可选）如果想默认使用wsl2，则设置命令`wsl --set-default-version 2` 。如果想同时使用wsl1和wsl2，则可以对下载好不同的linux发行版设置`version` 。
    ```bash
@@ -41,7 +43,8 @@ externalLink : ""
 7. 下载ubuntu20.04 [https://aka.ms/wslubuntu2004](https://aka.ms/wslubuntu2004)。(可能是网络问题下载很慢，我改用微软商店下载很快)
 8. 将文件后缀改为.zip，然后解压
 9. 双击exe启动，根据提示设置账号密码，安装完成。
-![image-20220425153222566](https://img.allworldg.xyz/2022/06/3e4839beaf0126e9a975bcfba266dff2.png)
+   
+	![image-20220425153222566](https://img.allworldg.xyz/2022/06/3e4839beaf0126e9a975bcfba266dff2.png)
 
 ## 配置阿里云镜像
 1. 为了提高Linux包管理器下载软件速度，修改apt-get镜像源。打开阿里云的ubuntu镜像网站 [https://developer.aliyun.com/mirror/ubuntu?spm=a2c6h.13651102.0.0.3e221b11YfnocC](https://developer.aliyun.com/mirror/ubuntu?spm=a2c6h.13651102.0.0.3e221b11YfnocC)
@@ -79,6 +82,7 @@ java -v #下载好后测试一下
 	vim settings.xml
 	在指定位置贴代码就行。
 	```
+
 ## 安装mysql
 
 1. 下载mysql 8.0的安装配置包->解压->更新apt源->安装mysql 8.0 server
@@ -172,14 +176,14 @@ netsh interface ip add address "vEthernet (WSL)" 192.168.50.88 255.255.255.0
 
 每次重启wsl后以管理员权限运行一下该脚本即可。
 
-==ps==：不用每次右击脚本使用管理员权限的方法。
+**ps** ：不用每次右击脚本使用管理员权限的方法。
 1. 右键创建快捷方式
 2. 进入属性，点击快捷方式下的高级
    ![300](https://img.allworldg.xyz/2022/06/662234721303720b31920da27452ccd8.png)
 3. 勾上管理员身份运行即可。
 
 ## 自启动脚本
-wsl2目前还没有`systemctl`，所以软件不能开机自启，开源社区提供一些自己开发的仿`Systemctl`软件，不过目前还不够完善，所以我用==开机+自动运行脚本==来达到傻瓜式自启。
+wsl2目前还没有`systemctl`，所以软件不能开机自启，开源社区提供一些自己开发的仿`Systemctl`软件，不过目前还不够完善，所以我用**开机+自动运行脚本**来达到傻瓜式自启。
 1. 在宿主机创建脚本（或者直接添加到上面固定ip脚本后面）
 2. 输入`wsl /home/allworldg/startup.sh`
 3. 在虚拟机内同样位置创建 `/home/allworldg/startup.sh`
@@ -191,7 +195,7 @@ wsl2目前还没有`systemctl`，所以软件不能开机自启，开源社区�
 
 ## 踩坑
 1. 因为修改 `/etc`文件的权限，导致sudo无法使用。
-	1. 原因：每次编辑/etc文件都得加 `sudo`，太不爽，图痛快直接来了一句 `sudo chown "myusername" -R /etc` ，结果后来使用sudo命令时报错。
+	1. 原因：每次编辑`/etc`文件都得加 `sudo`，太不爽，图痛快直接来了一句 `sudo chown "myusername" -R /etc` ，结果后来使用sudo命令时报错。
 		```bash
 		sudo: /etc/sudoers is owned by uid 1000, should be 0
 		sudo: no valid sudoers sources found, quitting
