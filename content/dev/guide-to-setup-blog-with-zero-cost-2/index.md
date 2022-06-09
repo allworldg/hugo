@@ -2,8 +2,8 @@
 title: "零成本搭建个人博客之迁移Pages和域名"
 date: 2022-05-25T10:45:55+08:00
 draft: false
-categories : ["个人博客搭建"]
-tags : ["个人博客","环境搭建"]
+categories : [个人博客搭建]
+tags : [个人博客,环境搭建]
 ---
 
 > 本文属于[零成本搭建个人博客指南](https://allworldg.xyz/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)系列

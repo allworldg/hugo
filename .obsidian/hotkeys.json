@@ -42,5 +42,14 @@
   ],
   "editor:delete-paragraph": [],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
-  "Enhanced editing:add-lines": []
+  "Enhanced editing:add-lines": [],
+  "templater-obsidian:insert-templater": [],
+  "markdown:toggle-preview": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "E"
+    }
+  ]
 }

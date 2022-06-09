@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
+            "file": "content/dev/build-wsl2/index.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -36,6 +36,17 @@
             }
           },
           {
+            "id": "e24fb090742d3152",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
             "id": "d4d51b9cd2ad6704",
             "type": "leaf",
             "state": {
@@ -49,9 +60,16 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "b198d899a0fb09d4",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -66,20 +84,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b198d899a0fb09d4",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "a0f7f3af24f11e99",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
+                "file": "content/dev/build-wsl2/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,39 +106,29 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md"
-              }
-            }
-          },
-          {
-            "id": "e24fb090742d3152",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "file": "content/dev/build-wsl2/index.md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 271
+    "width": 271,
+    "collapsed": true
   },
   "active": "63d4b7872326868f",
   "lastOpenFiles": [
+    "content/dev/build-wsl2/index.md",
+    "content/dev/build-wsl2/images/Pasted image 20220609080803.png",
+    "content/dev/build-wsl2/images/1d3647d14f7ec82894afe7d5366049a2.png",
     "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
     "content/dev/guide-to-setup-blog-with-zero-cost-3/index.md",
     "content/dev/guide-to-setup-blog-with-zero-cost-2/index.md",
+    "content/dev/build-wsl2.md",
     "content/learn/ruoyi-learn-1/index.md",
     "archetypes/learn.md",
-    "archetypes/essay.md",
-    "archetypes/dev.md",
-    "archetypes/default.md",
-    "content/dev/testhahah/slkdf.md",
-    "content/dev/guide-to-setup-blog-with-zero-cost-3/images/Pasted image 20220526165517.png"
+    "archetypes/essay.md"
   ]
 }
