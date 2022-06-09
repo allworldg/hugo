@@ -19,6 +19,7 @@ externalLink : ""
 
 1. 启用windows功能
    设置->应用和功能 ->程序和功能 ->启用或关闭windows功能
+   
    ![在这里插入图片描述](https://img.allworldg.xyz/2022/06/855241f193e309a7a54bbedffed8bc7b.png)
 
 2. 启动windows的linux子系统和虚拟机平台，管理员身份打开Powershell，运行命令
