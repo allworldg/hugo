@@ -25,7 +25,7 @@ since = 2022
 colorScheme = "auto"
 hideColorSchemeToggle = false
 
-[[params.utteranc]]
+[[params.utterances]]
 enable = true
 issueTerm = "pathname"
 repo = "allworldg/hugo"
