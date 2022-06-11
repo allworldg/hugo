@@ -25,6 +25,12 @@ since = 2022
 colorScheme = "auto"
 hideColorSchemeToggle = false
 
+[[params.utteranc]]
+enable = true
+issueTerm = "pathname"
+repo = "allworldg/hugo"
+theme = "github-light"
+
 [[params.social]]
 name = "Github"
 icon = "fa fa-2x fa-github"
@@ -49,7 +55,7 @@ url = "https://github.com/allworldg/"
               name = "关于"
               weight = 4
               url  = "about/"
-         
+          
 
 
 [markup]
