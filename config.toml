@@ -25,8 +25,7 @@ since = 2022
 colorScheme = "auto"
 hideColorSchemeToggle = false
 
-[[params.utterances]]
-enable = true
+[params.utterances]
 issueTerm = "pathname"
 repo = "allworldg/hugo"
 theme = "github-light"
