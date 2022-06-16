@@ -1,9 +1,9 @@
 {
   "baseFontSize": 17,
   "cssTheme": "Blue Topaz",
-  "translucency": true,
+  "translucency": false,
   "enabledCssSnippets": [
     "snippet"
   ],
-  "theme": "obsidian"
+  "theme": "moonstone"
 }
