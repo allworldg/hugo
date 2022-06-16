@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/essay/patient-and-English.md",
+            "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/essay/patient-and-English.md",
+                "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/essay/patient-and-English.md"
+                "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md"
               }
             }
           }
@@ -120,6 +120,7 @@
   },
   "active": "63d4b7872326868f",
   "lastOpenFiles": [
+    "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
     "content/essay/patient-and-English.md",
     "archetypes/learn.md",
     "archetypes/essay.md",
@@ -127,7 +128,6 @@
     "content/dev/build-wsl2/index.md",
     "content/dev/build-wsl2/images/Pasted image 20220609080803.png",
     "content/dev/build-wsl2/images/1d3647d14f7ec82894afe7d5366049a2.png",
-    "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
     "content/dev/guide-to-setup-blog-with-zero-cost-3/index.md",
     "content/dev/guide-to-setup-blog-with-zero-cost-2/index.md"
   ]
