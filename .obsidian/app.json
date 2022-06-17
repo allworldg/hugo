@@ -1,7 +1,7 @@
 {
   "foldIndent": true,
   "foldHeading": true,
-  "strictLineBreaks": false,
+  "strictLineBreaks": true,
   "newFileLocation": "current",
   "newLinkFormat": "relative",
   "attachmentFolderPath": "./images",
