@@ -8,7 +8,7 @@ tags : [ruoyi,接口权限]
 categories : [ruoyi项目]
 externalLink : ""
 ---
-此文章属于ruoyi项目实战系列
+此文章属于[ruoyi项目实战](https://allworldg.xyz/tags/ruoyi/)系列
 
 ruoyi系统在前端主要通过权限字符包含与否来动态显示目录和按钮。为了防止通过http请求绕过权限限制，后端接口也需要进行相关权限设计。
 ## @PreAuthorize使用
