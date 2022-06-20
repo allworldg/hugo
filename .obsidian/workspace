@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "fab4d74326aaf366",
+        "id": "7d4779d05b47a5d6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
+            "file": "content/learn/ruoyi-learn-1/index.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -52,21 +52,13 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "action",
+                "query": "“关于",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "b198d899a0fb09d4",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
             }
           }
         ]
@@ -89,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
+                "file": "content/learn/ruoyi-learn-1/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md"
+                "file": "content/learn/ruoyi-learn-1/index.md"
               }
             }
           }
@@ -118,17 +110,17 @@
     "width": 271,
     "collapsed": true
   },
-  "active": "fab4d74326aaf366",
+  "active": "7d4779d05b47a5d6",
   "lastOpenFiles": [
-    "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
+    "content/learn/ruoyi-learn-1/index.md",
+    "content/learn/ruoyi-learn-1/images/Pasted image 20220620205549.png",
     "content/essay/patient-and-English.md",
+    "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
     "archetypes/learn.md",
     "archetypes/essay.md",
     "archetypes/dev.md",
     "content/dev/build-wsl2/index.md",
     "content/dev/build-wsl2/images/Pasted image 20220609080803.png",
-    "content/dev/build-wsl2/images/1d3647d14f7ec82894afe7d5366049a2.png",
-    "content/dev/guide-to-setup-blog-with-zero-cost-3/index.md",
-    "content/dev/guide-to-setup-blog-with-zero-cost-2/index.md"
+    "content/dev/build-wsl2/images/1d3647d14f7ec82894afe7d5366049a2.png"
   ]
 }

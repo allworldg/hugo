@@ -31,7 +31,8 @@ tags : [个人博客,环境搭建]
  1. 直接从[https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases)下载windows二进制压缩包。解压，将`.exe`运行文件放入`bin`目录下，然后将`bin`目录添加到环境变量(此举是为了全局方便使用Hugo命令) 。
  2. 为了后续添加主题以及推送到线上平台，还需要额外下载安装git工具（自行傻瓜式安装即可）。
  3. 用命令创建新博客项目 `hugo new site 'your BlogSite name（此处我自定义命名为'HugoBlog''` 。创建完成后进入新生成的文件夹，可以看到以下文件结构。
-	 ![picture](https://img.allworldg.xyz/2022/05/0826acc0122d80fffd1670838d76264d.png) 
+    
+    ![picture](https://img.allworldg.xyz/2022/05/0826acc0122d80fffd1670838d76264d.png) 
  4. `content`目录下存放文章，`themes`存放主题，`config.toml`用于配置整个博客站点。
  5. 选择一个博客主题作为基础样式，可以去Hugo官网或者各大帖子推荐上找到自己初步看顺眼的主题，然后添加。
 	```
@@ -50,7 +51,9 @@ tags : [个人博客,环境搭建]
 	pygmentsCodeFencesGuessSyntax = true
 	enableEmoji = true
 	```
-7. 创建一篇文章 `Hugo new Blog/FistBlog.md` ，此时在`/content/Blog`目录下会生成新的文章，然后就可以随意书写了。需要注意的是，如果想在指定导航下看到文章目录，则需要在`content`内创建一个文件夹，比如`Blog`。如果是想直接看到内容，则直接在`content`目录下创建文章即可。例如：点击“关于”直接展示内容。![](https://img.allworldg.xyz/2022/05/25e297c46bc3cfb5b2b6b373dbc8bb83.png)
+7. 创建一篇文章 `Hugo new Blog/FistBlog.md` ，此时在`/content/Blog`目录下会生成新的文章，然后就可以随意书写了。需要注意的是，如果想在指定导航下看到文章目录，则需要在`content`内创建一个文件夹，比如`Blog`。如果是想直接看到内容，则直接在`content`目录下创建文章即可。例如：点击“关于”直接展示内容。
+   
+   ![](https://img.allworldg.xyz/2022/05/25e297c46bc3cfb5b2b6b373dbc8bb83.png)
 8. 写好后将文章`draft`状态改为`false`，然后`HugoBLog`根目录下命令行运行`Hugo server`就可以本地浏览博客网站。
 ## 使用博客托管平台+自动部署发布
 本地写好博客后还需要将整个博客站点放到一个合适的代码托管平台，这样我就可以在网络上用域名访问我的博客平台。静态博客在网络上发布的传统方式一般是这样的：**写好文章-> 本地生成静态页面 -> 将网站所需要的文件单独上传 -> 发布成功 ->(可选)上传完整站点数据备份。**
@@ -69,9 +72,11 @@ tags : [个人博客,环境搭建]
 	git push origin master #发送本地数据到代码仓库a
 	```
 	查看自己的远程库，推送成功。
+	
 	![](https://img.allworldg.xyz/2022/05/c96885b78ca7260d997053410a7b1f7f.png)
 3. 代码仓库a只用作完整数据备份，现在我需要利用github actions，也就是通过创建脚本自动将a仓库部分文件更新到仓库b。
 	1. 首先点击`actions`，创建自定义workflow
+	   
 	   ![](https://img.allworldg.xyz/2022/05/710fafd176c8f7eb2a08f9b8941fe8d3.png)
 	2. github上已经有很多现成的actions，所以我们可以直接拿来用。这里推荐使用的是`peaceiris/actions-gh-pages` 。在配置文件自定义workflow配置文件中只需要根据自己情况修改`jobs:steps:uses`和`external_repository:(代码仓库b的地址)`即可。
 	
