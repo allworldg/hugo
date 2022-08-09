@@ -69,5 +69,5 @@ url = "https://github.com/allworldg/"
     lineNumbersInTable = true
     noClasses = true
     noHl = false
-    style = 'dracula'
+    style = 'manni'
     tabWidth = 4

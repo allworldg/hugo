@@ -344,7 +344,6 @@ Object.defineProperty(Blob.prototype, Symbol.toStringTag, {
  *
  * FetchError interface for operational errors
  */
-
 /**
  * Create FetchError instance
  *

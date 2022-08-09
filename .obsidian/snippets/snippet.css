@@ -34,3 +34,9 @@
   font-size: .85em;
 }
 
+
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight), .cm-formatting.cm-formatting-code.cm-inline-code {
+  color: #288fee;
+  background-color: #cccccc62;
+}
+

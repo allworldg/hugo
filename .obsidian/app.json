@@ -1,21 +1,4 @@
 {
-  "foldIndent": true,
-  "foldHeading": true,
-  "strictLineBreaks": true,
-  "newFileLocation": "current",
-  "newLinkFormat": "relative",
-  "attachmentFolderPath": "./images",
-  "showLineNumber": false,
-  "vimMode": false,
-  "promptDelete": false,
-  "alwaysUpdateLinks": true,
-  "useMarkdownLinks": true,
   "legacyEditor": false,
-  "livePreview": true,
-  "fileSortOrder": "custom",
-  "readableLineLength": true,
-  "autoPairBrackets": true,
-  "autoPairMarkdown": true,
-  "showIndentGuide": false,
-  "rightToLeft": false
+  "livePreview": true
 }
