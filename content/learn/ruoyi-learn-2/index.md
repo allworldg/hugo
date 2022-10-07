@@ -1,6 +1,6 @@
 ---
 title: "Ruoyi Dict"
-draft : true
+draft : false
 date : 2022-10-07T10:21:04+08:00
 description : ""
 slug : "" 
