@@ -91,6 +91,7 @@ ruoyi项目在低于3.7.0的版本中，前端字典功能实现比较简单，�
 	```
 
 简单通过注释解释一下init里的一些调用函数源码
+
 4. DictMeta.parse
 	```JavaScript
 	DictMeta.parse= function(options) {  
@@ -110,6 +111,7 @@ ruoyi项目在低于3.7.0的版本中，前端字典功能实现比较简单，�
 	主要将vue页面的dicts数组以及DictOption的meta数据在整合赋值到DictMeta对象，方便后续调用。
 
 5. loadDict(dict,dictMeta)
+
 	```JavaScript
 	function loadDict(dict, dictMeta) {  
 	  return dictMeta.request(dictMeta)//请求后端api，获取字典数据  
