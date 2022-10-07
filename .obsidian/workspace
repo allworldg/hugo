@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/about.md",
+            "file": "content/learn/ruoyi-learn-2/index.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/about.md",
+                "file": "content/learn/ruoyi-learn-2/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,6 +90,11 @@
   },
   "active": "8ea9999e14cc9302",
   "lastOpenFiles": [
+    "content/learn/ruoyi-learn-2/index.md",
+    "content/learn/ruoyi-learn-1/index.md",
+    "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
+    "content/dev/guide-to-setup-blog-with-zero-cost-2/index.md",
+    "content/dev/build-wsl2/index.md",
     "content/about.md"
   ]
 }

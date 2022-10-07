@@ -5,7 +5,7 @@ date : 2022-06-02T21:54:58+08:00
 description : ""
 slug : "" 
 tags : [ruoyi,接口权限]
-categories : [ruoyi项目]
+categories : [ruoyi]
 externalLink : ""
 ---
 此文章属于[ruoyi项目实战](https://allworldg.xyz/tags/ruoyi/)系列
