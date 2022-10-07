@@ -1,5 +1,5 @@
 ---
-title: "Ruoyi源码分析"
+title: "Ruoyi字典源码分析"
 draft : false
 date : 2022-10-07T10:21:04+08:00
 description : ""
