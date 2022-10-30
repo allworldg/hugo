@@ -61,7 +61,8 @@ Ruoyi表单构建通过拖动组件就能自动生成前端代码，很方便，
 ```JS
 execCopy(data) {
       document.getElementById('copyNode').click()
-},```
+},
+```
 点击该元素。在html部分我们可以看到，该id对应的是一个隐藏的input元素，本身无任何功能。
 
 ## 关键部分
