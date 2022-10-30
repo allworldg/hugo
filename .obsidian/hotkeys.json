@@ -1,1 +1,12 @@
-{}
+{
+  "obsidian-excalidraw-plugin:insert-link-to-element": [],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "E"
+    }
+  ],
+  "markdown:toggle-preview": []
+}

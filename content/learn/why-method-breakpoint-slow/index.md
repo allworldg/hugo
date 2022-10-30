@@ -9,7 +9,9 @@ categories : [Java]
 externalLink : ""
 ---
 
-首先简单了解Java断点的基本原理和过程
+一些IDE提供“方法断点”的功能，可以让断点调试看起来非常简洁，然而在调试过程中我们会发现调试反应时间很长，调试器的性能大大降低。在本文中，我会简单解释方法断点的实现原理，以及为何导致性能变差的原因。
+
+为了更好的理解，我先简单说明一下断点是如何实现的，以及调试器的工作原理。
 
 ## JPDA(Java Platform Debugger Architecture)
 JPDA是JAVA调试框架，主要用于debugger(调试器)和debuggee(调试程序或进程)之间的通信。JPDA主要由三个主要API构成。
@@ -44,7 +46,7 @@ MethodExit(....,JmethodID method)
 ```
 断点实现流程：
 1. IDE将断点添加到编辑器内置维护的一个断点list里。
-2. debugger调用上文说的SetEventNotificationMode(),启用entry method和exit method，当VM运行代码进入和退出方法时，会向debugger发送事件。
+2. debugger调用上文说的SetEventNotificationMode(),启用entry events和exit events，当VM运行代码进入和退出方法时，会向debugger发送事件。
 3. 每当进入和退出方法时，VM会向font-end发送MethodEntry或MethodExit。
 4. IDE根据事件中的jmethodID，来检索该id是否存在于断点list中。
 5. 如果存在，debugger则调用 `SetBreakPoint` 方法，将请求发送到VM。

@@ -20,16 +20,32 @@
   font-size: 15px;
 }
 
+/*行内代码颜色*/
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight), .cm-formatting.cm-formatting-code.cm-inline-code {
-  color: #288fee;
-  background-color: #cccccc62;
+  color: #09447c;
+  background-color: #ffffff62;
 }
 
 /*修改代码块内的comment颜色*/
 .token.comment, .cm-s-obsidian span.cm-comment:not([class*="hashtag"]){
       color: #0a0a0bde !important;
 }
-
+/*代码块内""内颜色*/
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .markdown-source-view.cm-s-obsidian .cm-string:not([class*="url"]) {
+    color: #111111 !important;
+}
+/*代码块内java注解的颜色，有可能影响其他元素颜色*/
+.theme-light .token.comment, .theme-light .token.prolog, .theme-light .token.doctype, .theme-light .token.cdata, .theme-light .cm-comment, .theme-light .cm-meta, .theme-light .cm-qualifier {
+    color: #9b6307;
+}
+/*代码块html元素颜色，有可能影响其他元素颜色*/
+.theme-light .token.property, .theme-light .token.tag, .theme-light .token.boolean, .theme-light .token.number, .theme-light .token.constant, .theme-light .token.symbol, .theme-light .token.deleted, .theme-light .cm-number, .theme-light .cm-tag {
+    color: #0846b0 ;
+}
+/*代码块html中元素属性颜色，有可能影响其他元素颜色*/
+.theme-light .token.selector, .theme-light .token.attr-name, .theme-light .token.string, .theme-light .token.char, .theme-light .token.builtin, .theme-light .token.inserted, .theme-light .cm-attribute {
+    color: #0759e7d2;
+}
 
 .markdown-source-view .markdown-embed {
   background: white;
