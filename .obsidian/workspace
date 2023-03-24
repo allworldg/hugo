@@ -7,12 +7,9 @@
         "id": "aced3b601a467bce",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "content/learn/ruoyi-learn-build-form/index.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": false
+            "file": "content/learn/ruoyi-learn-1/images/Pasted image 20220620205549.png"
           }
         }
       }
@@ -70,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/learn/ruoyi-learn-build-form/index.md",
+                "file": "content/learn/ruoyi-learn-1/images/Pasted image 20220620205549.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +87,15 @@
   },
   "active": "aced3b601a467bce",
   "lastOpenFiles": [
-    "content/learn/ruoyi-learn-build-form/index.md",
-    "content/learn/ruoyi-learn-2/index.md",
-    "content/learn/why-method-breakpoint-slow/index.md",
-    "Excalidraw/Drawing 2022-10-19 21.30.05.excalidraw.md",
-    "Excalidraw/Drawing 2022-10-19 21.30.04.excalidraw.md",
-    "Excalidraw/Drawing 2022-10-19 21.29.47.excalidraw.md",
-    "content/learn/ruoyi-learn-1/index.md",
+    "content/learn/ruoyi-learn-1/images/Pasted image 20220620205549.png",
+    "content/about.md",
+    "content/dev/guide-to-setup-blog-with-zero-cost-1/images/4a6a87f1bdc187e99d53dab79f667810.png",
     "content/dev/guide-to-setup-blog-with-zero-cost-1/index.md",
-    "content/dev/guide-to-setup-blog-with-zero-cost-2/index.md",
-    "content/dev/build-wsl2/index.md"
+    "public/dev/guide-to-setup-blog-with-zero-cost-2/images/Pasted image 20220527113307.png",
+    "public/dev/guide-to-setup-blog-with-zero-cost-1/images/4a6a87f1bdc187e99d53dab79f667810.png",
+    "content/dev/guide-to-setup-blog-with-zero-cost-4/index.md",
+    "content/dev/guide-to-setup-blog-with-zero-cost-3/index.md",
+    "content/dev/guide-to-setup-blog-with-zero-cost-4/images/index.png",
+    "content/dev/guide-to-setup-blog-with-zero-cost-4.md"
   ]
 }
